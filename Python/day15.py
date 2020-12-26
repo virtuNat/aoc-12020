@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from van_eck import van_eck
+from cmodules.van_eck import van_eck
 
 def main():
     with open(f'{__file__[:-3].capitalize()}Input.txt', 'r') as ifile:

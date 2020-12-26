@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from cup_game import play
+from cmodules.cup_game import play
 
 def main():
     with open(f'{__file__[:-3].capitalize()}Input.txt', 'r') as ifile:
