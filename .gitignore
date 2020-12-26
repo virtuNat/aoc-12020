@@ -1,0 +1,7 @@
+# Ignore compiled stuff.
+*.html
+*.exe
+*.hi
+*.o
+__pycache__
+build
