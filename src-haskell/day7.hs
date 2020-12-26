@@ -10,5 +10,5 @@ matchLines ls = map parseLine lines ls
 
 main :: IO ()
 main = do
-    content <- readFile "Day7Input.txt"
+    content <- readFile "day07.txt"
     print $ lines content

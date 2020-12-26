@@ -26,7 +26,7 @@ verifyPass2 g = (word !! (i-1) == letter) /= (word !! (j-1) == letter)
 
 main :: IO ()
 main = do
-    content <- readFile "Day2Input.txt"
+    content <- readFile "day02.txt"
     let matches = map unpackLine $ lines content
     print $ tallyPass verifyPass1 matches
     print $ tallyPass verifyPass2 matches

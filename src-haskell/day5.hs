@@ -13,7 +13,7 @@ buildBinary b = foldl1 (\x y -> shiftL x 1 + y) $ map parseToBinary b
 
 main :: IO ()
 main = do
-    content <- readFile "Day5Input.txt"
+    content <- readFile "day05.txt"
     let seats = map buildBinary $ lines content
     print $ maximum seats
     print $ elemAt 0 $ difference (fromList [minimum seats..maximum seats]) $ fromList seats

@@ -5,7 +5,7 @@ import Data.List.Split
 
 main :: IO ()
 main = do
-    content <- readFile "Day6Input.txt"
+    content <- readFile "day06.txt"
     let qsets = map (map fromList . lines) $ splitOn "\n\n" content
     print $ sum $ map (length . foldl1 union) qsets
     print $ sum $ map (length . foldl1 intersection) qsets

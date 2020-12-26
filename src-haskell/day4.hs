@@ -47,7 +47,7 @@ validateValues ppt = foldl1 (&&) $ map ($ ppt) [
 
 main :: IO ()
 main = do
-    content <- readFile "Day4Input.txt"
+    content <- readFile "day04.txt"
     let valids = filter validateFields $ parsePasses content
     print $ length valids
     print $ length $ filter validateValues valids
